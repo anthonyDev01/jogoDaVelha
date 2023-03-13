@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="shortcut icon" href="img/planeta.png" type="image/x-icon">
+    <title>Jogo da velha</title>
+  </head>
+  <body>
+    <div id="logo">
+      <img id="planet" src="/img/planeta.png" alt="" />
+
+      <div id="title"><h1>JOGO DA VELHA</h1></div>
+    </div>
+
+    <div id="gameOver">
+      <h1 id="winer">JOGADOR 1 VENCEU</h1>
+
+      <div id="restart" onclick="restart(); end()" style="display: none">
+        CONTINUAR
+      </div>
+    </div>
+
+    <div id="chooseMode">
+      <div id="modePlayer" onclick="hideSelection()">VS PLAYER</div>
+
+      <div id="modeCPU" onclick="hideSelection(); cpuMode(0)">VS CPU</div>
+    </div>
+
+    <div id="container">
+      <div id="containerPlayer" style="display: none">
+        <div id="j1">0</div>
+        <div id="j2">0</div>
+      </div>
+
+      <div id="tabuleiro" style="display: none">
+        <div class="row">
+          <div id="0" class="square bb"></div>
+          <div id="1" class="square bb brl"></div>
+          <div id="2" class="square bb"></div>
+        </div>
+        <div class="row">
+          <div id="3" class="square bb"></div>
+          <div id="4" class="square bb brl"></div>
+          <div id="5" class="square bb"></div>
+        </div>
+        <div class="row">
+          <div id="6" class="square"></div>
+          <div id="7" class="square brl"></div>
+          <div id="8" class="square"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/munu.js"></script>
+    <script src="src/game.js"></script>
+    <script src="src/interface.js"></script>
+    <script src="src/cumputer.js"></script>
+  </body>
+</html>

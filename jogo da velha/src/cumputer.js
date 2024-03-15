@@ -21,6 +21,6 @@ function cpuMode() {
     }
 
     handleMove(numeberRandom);
-    updateSquare(numeberRandom);
+    updateSquare(numeberRandom)
   }
 }
